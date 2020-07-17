@@ -1,0 +1,130 @@
+/*
+COLOR PALETTE
+https://coolors.co/c7ede4-d5fff3-af9ab2-820b8a-672a4e
+$light-cyan: #c7ede4ff;
+$aero-blue: #d5fff3ff;
+$lilac-luster: #af9ab2ff;
+$patriarch: #820b8aff;
+$old-mauve: #672a4eff;
+*/
+
+/** {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}*/
+
+/* Global styles.....................................*/
+body {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+h1 {
+  font-size: 120px;
+  line-height: 1;
+  font-weight: bold;
+}
+h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+h1, h2, h3, h4 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  margin: 0;
+}
+.content-wrap {
+  max-width: 700px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 52px 0;
+}
+/*.divider > section {
+  border-bottom: 1px dashed #343434;
+  padding: 25px 0;
+}
+.divider > section:last-of-type {
+  border-bottom: none;
+}*/
+
+/* Header.....................................*/
+header img {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 100%;
+}
+
+.title {
+  background: #00023F;
+  color: #d5fff3ff;
+  font-size: 90px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.subtitle {
+  background: #c7ede4ff;
+  color: #582A30;
+  font-size: 60px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 0;
+/*  border-bottom: 2px dashed black;*/
+}
+
+/* Methodology.....................................*/
+
+.intro {
+  background: #fbfbf8;
+  padding-top: 20px;
+}
+
+.intro h3 {
+  /*font-style: italic;*/
+  text-align: center;
+}
+
+.methodology {
+  background: #af9ab2ff;
+  margin: -10px;
+}
+
+.methodology h2 {
+  color: #fbfbf8;
+}
+
+#train_schedule {
+  width: auto;
+  margin: -8px;
+}
+
+.sample h2 {
+  color: #582A30;
+}
+
+footer {
+    background: #820b8aff;
+    color: #fbfbf8;
+    margin: -10px;
+}
+footer a {
+    color: #d5fff3ff;
+}
