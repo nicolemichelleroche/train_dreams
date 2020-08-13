@@ -1,11 +1,13 @@
 /*
 COLOR PALETTE
 https://coolors.co/c7ede4-d5fff3-af9ab2-820b8a-672a4e
+very dark blue (title background): #00023F;
 $light-cyan: #c7ede4ff;
 $aero-blue: #d5fff3ff;
 $lilac-luster: #af9ab2ff;
 $patriarch: #820b8aff;
 $old-mauve: #672a4eff;
+$goldenrod: #DAA520;
 */
 
 /** {
@@ -19,6 +21,14 @@ $old-mauve: #672a4eff;
 }*/
 
 /* Global styles.....................................*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   color: #000000;
   font-family: 'Roboto', sans-serif;
@@ -53,6 +63,31 @@ h1, h2, h3, h4 {
   margin: 0 auto;
   padding: 52px 0;
 }
+
+/*figure {
+  float: left;
+  width: 30%;
+  text-align: left;
+  font-style: italic;
+  font-size: smaller;
+}*/
+
+figure {
+  padding: 50px 0 35px 0;
+  margin: 0;
+  font-style: italic;
+  font-size: smaller;
+  text-align: left;
+}
+
+figure img {
+  max-width: 90%;
+}
+
+audio {
+  padding-bottom: 20px;
+}
+
 /*.divider > section {
   border-bottom: 1px dashed #343434;
   padding: 25px 0;
@@ -62,12 +97,56 @@ h1, h2, h3, h4 {
 }*/
 
 /* Header.....................................*/
-header img {
-  margin: 0 auto;
-  padding: 0;
-  max-width: 100%;
+
+.train_art {
+  display: flex;
 }
 
+.train_art_item {
+  max-width: 100%;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  flex: 1 1 300px;
+  padding: 0 2px;
+}
+
+.train_art_last_item {
+  max-width: 100%;
+  width: 100%;
+  /*min-width: 0;
+  min-height: 0;
+  flex: 1 1 300px;*/
+}
+
+.title {
+  background: #00023F;
+  color: #fbfbf8; /*d5fff3ff;*/
+  font-size: 90px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  /*flex: 0 0 100%;*/
+}
+
+.subtitle {
+  background: #c7ede4ff;
+  color: #582A30;
+  font-size: 60px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+  /*flex: 0 0 100%;*/
+}
+/*
 .title {
   background: #00023F;
   color: #d5fff3ff;
@@ -84,11 +163,13 @@ header img {
   color: #582A30;
   font-size: 60px;
   font-family: 'Libre Baskerville', serif;
-  font-weight: bold;
+  font-weight: 400;
   text-align: center;
   padding: 0;
-/*  border-bottom: 2px dashed black;*/
+  **  border-bottom: 2px dashed black;**
 }
+
+
 
 /* Methodology.....................................*/
 
@@ -102,12 +183,34 @@ header img {
   text-align: center;
 }
 
+.float {
+  float: left;
+  margin: 30px 30px 30px 0;
+  max-width: 250px;
+}
+
+.float-2 {
+  float: right;
+  margin: 0 30px 30px 30px;
+  max-width: 250px;
+}
+
 .methodology {
   background: #af9ab2ff;
   margin: -10px;
 }
 
 .methodology h2 {
+  color: #fbfbf8;
+}
+
+.notes {
+  background: #00023F;
+  color: #fbfbf8;
+  margin: -10px;
+}
+
+.notes h2 {
   color: #fbfbf8;
 }
 
@@ -120,11 +223,85 @@ header img {
   color: #582A30;
 }
 
+.observe {
+  background: #DAA520;
+  margin: -10px;
+}
+
 footer {
-    background: #820b8aff;
-    color: #fbfbf8;
+    background: #672a4eff;
+    color: #DAA520;
     margin: -10px;
 }
+
+footer h2 {
+    color: #fbfbf8;
+}
+
 footer a {
     color: #d5fff3ff;
+}
+
+/* Responsive
+------------------------------------*/
+
+  @media screen and (max-width:749px){
+
+  .title {
+    font-size: 70px;
+  }
+
+  .subtitle {
+    font-size: 45px;
+  }
+
+  .float, .float-2 {
+    max-width: 85%;
+    float: none;
+    margin: 25px;
+  }
+
+  h2 {
+      font-size: 40px;
+  }
+  h3 {
+      font-size: 22px;
+  }
+  h4 {
+      font-size: 18px;
+  }
+}
+
+
+
+  /*
+
+      h1 {
+        font-size: 120px;
+        line-height: 1;
+        font-weight: bold;
+      }
+      h2 {
+        font-size: 50px;
+        font-weight: bold;
+      }
+
+  @media screen and (min-width:750px){
+  header, footer {
+    text-align: center;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
 }
