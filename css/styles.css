@@ -223,6 +223,10 @@ audio {
   color: #582A30;
 }
 
+.sample img {
+  max-width: 400px;
+}
+
 .observe {
   background: #DAA520;
   margin: -10px;
@@ -240,6 +244,10 @@ footer h2 {
 
 footer a {
     color: #d5fff3ff;
+}
+
+footer img {
+    max-width: 500px;
 }
 
 /* Responsive
